@@ -169,7 +169,10 @@ main p {
 }
 
 .restaurant-item .restaurant-item__header .restaurant-item__header__poster {
-  width: 100%;
+  transition: transform .2s;
+}
+.restaurant-item .restaurant-item__header .restaurant-item__header__poster:hover {
+  transform: scale(1.5);
 }
 
 .restaurant-item .restaurant-item__header .restaurant-item__header__rating {
