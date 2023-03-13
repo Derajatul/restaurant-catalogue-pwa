@@ -13,7 +13,7 @@ This is a Progressive Web App (PWA) for a restaurant catalog. It allows users to
 
 ## Demo
 
-You can try the live demo of this app at [https://derajatul.github.io/restaurant-catalogue-pwa/](https://derajatul.github.io/restaurant-catalogue-pwa/).
+You can try the live demo of this app at [https://restaurant-catalogue-pwa-omega.vercel.app/](https://restaurant-catalogue-pwa-omega.vercel.app/).
 
 ## Features
 
