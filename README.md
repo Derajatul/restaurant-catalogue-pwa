@@ -1,55 +1,59 @@
-Tugas Submision Front-end expert dicoding.com
+# Restaurant Catalogue PWA
 
-<h2>Getting Started</h2>
-<h3>
+This is a Progressive Web App (PWA) for a restaurant catalog. It allows users to browse restaurants, view restaurant details, and save their
+## Table of Contents
 
-Step 1
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-</h3>
+## Demo
 
-First, download the code above on the `Code` button, or you can also copy the above using the clone command as follows :
+You can try the live demo of this app at [https://derajatul.github.io/restaurant-catalogue-pwa/](https://derajatul.github.io/restaurant-catalogue-pwa/).
 
+## Features
 
-```sh
-git clone https://github.com/Derajatul/restaurant-catalogue-pwa.git
-```
+- Browse restaurants
+- View restaurant details
+- Save favorite restaurants for offline access
+- Installable as a PWA
+- Responsive design for mobile and desktop devices
 
-<h3>
+## Technologies
 
-Step 2
+This app was built using the following technologies:
 
-</h3>
+- HTML
+- CSS
+- JavaScript
+- IndexedDB
+- Service Worker
+- Web App Manifest
 
-Second, install the packages needed to run the program via the following command :
+## Installation
 
-```sh
-npm install
-```
+1. Clone this repository: `git clone https://github.com/Derajatul/restaurant-catalogue-pwa.git`
+2. Navigate to the project directory: `cd restaurant-catalogue-pwa`
+3. Install the dependencies: `npm install`
 
-you can also install using another package manager according to your use
+## Usage
 
-<h3>
+1. Build this app: `npm run build`
+2. Serve this app: `npm run serve`
+2. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 
-Step 3
+## Contributing
 
-</h3>
+Contributions are always welcome! If you'd like to contribute to this project, please follow these steps:
 
-Third, do a production build to render the files needed at the development stage. You can do this using the following command :
+1. Fork this repository
+2. Create a new branch: `git checkout -b my-new-feature`
+3. Make your changes and commit them: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request
 
-```sh
-npm run build
-```
-
-<h3>
-
-Step 4
-
-</h3>
-
-Finally, run the following command to open on localhost :
-
-```sh
-npm run start-dev
-```
-
-After running, open `http://localhost:/` in the browser.
+## License
