@@ -27,8 +27,9 @@ h5 {
 a {
   height: 44px !important;
 }
-.loading {
-  display: none;
+img{
+  max-width: 100% !important;
+  height: auto !important;
 }
 .skip-link {
   position: absolute;
@@ -169,10 +170,7 @@ main p {
 }
 
 .restaurant-item .restaurant-item__header .restaurant-item__header__poster {
-  transition: transform .2s;
-}
-.restaurant-item .restaurant-item__header .restaurant-item__header__poster:hover {
-  transform: scale(1.5);
+  max-width: 100%;
 }
 
 .restaurant-item .restaurant-item__header .restaurant-item__header__rating {
