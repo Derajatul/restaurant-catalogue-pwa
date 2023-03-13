@@ -7,7 +7,7 @@ const Like = {
       <div class="content">
         <h2 class="content__heading">Your Liked Restaurant</h2>
         <div id="restaurant" class="restaurant">
- 
+        Restaurant tidak ditemukan!
         </div>
       </div>
     `;
@@ -16,9 +16,14 @@ const Like = {
   async afterRender() {
     const restaurants = await FavoriteRestaurant.getAllRestaurant();
     const restaurantsContainer = document.querySelector('#restaurant');
-
+    if (restaurants.length > 0) {
+      restaurantsContainer.innerHTML = '';
+    } else {
+      restaurantsContainer.innerHTML = 'Restaurant tidak ditemukan!';
+    }
     restaurants.forEach((restaurant) => {
-      restaurantsContainer.innerHTML += createRestaurantItemTemplate(restaurant);
+      restaurantsContainer.innerHTML
+        += createRestaurantItemTemplate(restaurant);
     });
   },
 };
