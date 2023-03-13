@@ -8,7 +8,8 @@
     "build": "webpack --config webpack.prod.js",
     "serve": "http-server dist --port 9000",
     "build-serve": "npm run build && npm run serve",
-    "build-image": "node sharp.js"
+    "build-image": "node sharp.js",
+    "test": "karma start"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,12 @@
     "http-server": "^14.1.1",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-jasmine": "^5.1.0",
+    "karma-sourcemap-loader": "^0.4.0",
+    "karma-webpack": "^5.0.0",
     "sharp": "^0.31.3",
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
