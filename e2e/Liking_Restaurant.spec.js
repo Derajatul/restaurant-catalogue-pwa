@@ -6,12 +6,12 @@ const assert = require('assert');
 
 Feature('Liking Restaurants');
 
-Before((I) => {
+Before(({ I }) => {
   I.amOnPage('/#/like');
 });
 
 Scenario('liking one restaurant', async ({ I }) => {
-  I.see('Oops.. Restaurant is empty', '.restaurantIsEmpty p');
+  I.see('Restaurant tidak ditemukan!', '.restaurantIsEmpty p');
 
   I.amOnPage('/');
 
@@ -32,7 +32,7 @@ Scenario('liking one restaurant', async ({ I }) => {
 });
 
 Scenario('unliking one restaurant', async ({ I }) => {
-  I.see('Oops.. Restaurant is empty', '.restaurantIsEmpty p');
+  I.see('Restaurant tidak ditemukan!', '.restaurantIsEmpty p');
 
   I.amOnPage('/');
 
@@ -61,5 +61,5 @@ Scenario('unliking one restaurant', async ({ I }) => {
   const FavoriteRestaurantIsEmpty = await I.grabTextFrom(
     '.restaurantIsEmpty p'
   );
-  assert.strictEqual('Oops.. Restaurant is empty', FavoriteRestaurantIsEmpty);
+  assert.strictEqual('Restaurant tidak ditemukan!', FavoriteRestaurantIsEmpty);
 });

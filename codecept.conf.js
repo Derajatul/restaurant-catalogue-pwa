@@ -21,4 +21,12 @@ exports.config = {
     I: './steps_file.js',
   },
   name: 'restaurant-catalogue-pwa',
+  plugins: {
+    retryFailedStep: {
+      enabled: true,
+    },
+    screenshotOnFail: {
+      enabled: true,
+    },
+  },
 };

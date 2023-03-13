@@ -6,8 +6,8 @@ const Like = {
     return `
       <div class="content">
         <h2 class="content__heading">Your Liked Restaurant</h2>
-        <div id="restaurant" class="restaurant">
-        Restaurant tidak ditemukan!
+        <div id="restaurant" class="restaurantIsEmpty">
+          Restaurant tidak ditemukan!
         </div>
       </div>
     `;
@@ -19,7 +19,7 @@ const Like = {
     if (restaurants.length > 0) {
       restaurantsContainer.innerHTML = '';
     } else {
-      restaurantsContainer.innerHTML = 'Restaurant tidak ditemukan!';
+      restaurantsContainer.innerHTML = '<p>Restaurant tidak ditemukan!</p>';
     }
     restaurants.forEach((restaurant) => {
       restaurantsContainer.innerHTML

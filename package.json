@@ -10,7 +10,7 @@
     "build-serve": "npm run build && npm run serve",
     "build-image": "node sharp.js",
     "test": "karma start",
-    "e2e": "codeceptjs run --steps"
+    "e2e": "codeceptjs run --steps --verbose"
   },
   "keywords": [],
   "author": "",
