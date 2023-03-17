@@ -24,12 +24,11 @@ h4,
 h5 {
   color: var(--headline);
 }
-a {
-  height: 44px !important;
-}
 img{
-  max-width: 100% !important;
-  height: auto !important;
+  width: 100% !important;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
 }
 .skip-link {
   position: absolute;
@@ -109,9 +108,15 @@ img{
 .app-bar .app-bar__navigation.open {
   left: 0;
 }
-
+.app-bar .app-bar__navigation ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .app-bar .app-bar__navigation ul li a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: var(--button-text);
   padding: 8px;
